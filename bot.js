@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { Client, RichEmbed } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -21,7 +22,7 @@ client.on('message', message => {
     // We can create embeds using the MessageEmbed constructor
     // Read more about all that you can do with the constructor
     // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
-    const embed = RichEmbed()
+    const embed = new RichEmbed()
       // Set the title of the field
       .setTitle('A slick little embed')
       // Set the color of the embed
