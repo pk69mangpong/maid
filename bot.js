@@ -22,7 +22,7 @@ const embed = new Discord.RichEmbed()
   .setURL("https://store.steampowered.com/search/?specials=1&category1=998")
   .setAuthor("Steam", "https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_logo.png")
   .setColor(0x00AE86)
-  .setDescription("รับทราบค่ะ คุณ *" + member + "* คลิ๊กที่ภาพเพื่อดูเกมส์ที่กำลังลดราคาอยู่ค่ะ :blush: ")
+  .setDescription("รับทราบค่ะ...คลิ๊กที่ภาพเพื่อดูเกมส์ที่กำลังลดราคาอยู่ค่ะ :blush: ")
   .setThumbnail("https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_logo.png")
   message.channel.send({embed});
 }});
