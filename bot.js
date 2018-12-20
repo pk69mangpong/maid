@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('524513951736922125').send("ยินดีต้อนรับค่ะ คุณ, ${member}"); 
+    member.guild.channels.get('524513951736922125').send("Welcome *" + member + "* to the **Server name** discord server!"); 
 });
 
 // THIS  MUST  BE  THIS  WAY
