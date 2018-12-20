@@ -20,9 +20,8 @@ client.on('message', message => {
 const embed = new Discord.RichEmbed()
   .setTitle("ดูรายการเกมส์ที่กำลังลดราคา!")
   .setURL("https://store.steampowered.com/search/?specials=1&category1=998")
-  .setAuthor("Steam", "https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_logo.png")
   .setColor(0x00AE86)
-  .setDescription("รับทราบค่ะ...คลิ๊กที่ภาพเพื่อดูเกมส์ที่กำลังลดราคาอยู่ค่ะ :blush: ")
+  .setDescription("คลิ๊กลิ้งค์ข้างบน เพื่อดูเกมส์ที่กำลังลดราคานะคะ ซื้อแล้วต้องชวนน้องเมดเล่นด้วยนะ! :blush: ")
   .setThumbnail("https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_logo.png")
   message.channel.send({embed});
 }});
