@@ -11,5 +11,9 @@ client.on('message', message => {
   	}
 });
 
+client.on('guildMemberAdd', member => {
+    member.guild.channels.get('524513951736922125').send("Welcome"); 
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
