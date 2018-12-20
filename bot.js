@@ -19,7 +19,8 @@ client.on('message', message => {
   if (message.content === 'test') {
   message.channel.send({embed: {
   color: 3447003,
-  description: "A very simple Embed!"
+  title: "This is TEST embed",
+  description: "You can put [masked links](http://google.com) inside of rich embeds."
   }});
 }});
 
