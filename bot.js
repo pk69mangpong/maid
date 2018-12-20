@@ -16,18 +16,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === 'test') {
+  if (message.content === 'ดูเกมลดราคา') {
 const embed = new Discord.RichEmbed()
-  .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Steam", "https://i.imgur.com/lm8s41J.png")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
+  .setTitle("ดูรายการเกมส์ที่กำลังลดราคา!")
+  .setURL("https://store.steampowered.com/search/?specials=1&category1=998")
+  .setAuthor("Steam", "https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_logo.png")
   .setColor(0x00AE86)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
-  .setImage("http://i.imgur.com/yVpymuV.png")
-  .setThumbnail("http://i.imgur.com/p2qNFag.png")
- 
+  .setDescription("รับทราบค่ะ คุณ *" + member + "* คลิ๊กที่ภาพเพื่อดูเกมส์ที่กำลังลดราคาอยู่ค่ะ :blush: ")
+  .setThumbnail("https://steamstore-a.akamaihd.net/public/shared/images/responsive/header_logo.png")
   message.channel.send({embed});
 }});
 
