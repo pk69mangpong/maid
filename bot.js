@@ -16,6 +16,15 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '123test') {
+        message.channel.send({embed: {
+        color: 3447003,
+        description: "A very simple Embed!"
+}});
+  	}
+});
+
+client.on('message', message => {
   if (message.content === 'ดูเกมลดราคา') {
 const embed = new Discord.RichEmbed()
   .setTitle("ดูรายการเกมส์ที่กำลังลดราคา!")
