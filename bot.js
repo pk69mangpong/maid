@@ -17,7 +17,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '1234test') {
-    	message.reply('https://store.steampowered.com/app/275850/No_Mans_Sky/');
+    	message.reply('https://store.steampowered.com/search/?specials=1&category1=998');
   	}
 });
 
