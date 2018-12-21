@@ -16,11 +16,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '123test') {
-        message.channel.send({embed: {
-        color: 3447003,
-        description: "https://store.steampowered.com/app/275850/No_Mans_Sky"
-}});
+    if (message.content === '1234test') {
+    	message.reply('https://store.steampowered.com/app/275850/No_Mans_Sky/');
   	}
 });
 
