@@ -17,7 +17,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '1234test') {
-    	message.reply('https://store.steampowered.com/search/?specials=1&category1=998');
+    	message.reply('https://store.steampowered.com');
   	}
 });
 
